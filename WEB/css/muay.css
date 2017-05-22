@@ -57,7 +57,7 @@ body{
 }
 
 /*Mobil*/
-@media only screen and (max-width: 639px) and (orientation: portrait)
+@media only screen and (max-width: 799px) and (orientation: portrait)
 
 	{
 	.columnas {
@@ -80,15 +80,32 @@ body{
 	}		
 }
 
-@media only screen and (max-width: 639px) and (orientation: landscape)
+@media only screen and (max-width: 799px) and (orientation: landscape)
 
 	{
-
+	.columnas {
+		width: 44%;
+		float: left;
+		margin: 2.5%;
+		margin-top: 3em;
+		padding: 0.5%;
+		background-color: rgba(255, 255, 255, 0.5);
+		font-size: 1.3em !important;
+	}
+	.columnas p {
+		width: 100% !important;
+	}
+	h1 {
+		font-family: arial black !important;
+		font-size: 3em !important;
+		color: white !important;
+		margin-top: 0.5em;
+	}
 }
 
 
 /*PC*/
-@media only screen and (min-width: 640px)
+@media only screen and (min-width: 800px)
 	{
 	.columnas {
 		width: 44%;
