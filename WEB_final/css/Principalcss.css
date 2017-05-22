@@ -1,0 +1,342 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------*/
+
+body{
+		background-color: white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 0;
+		
+}
+
+/*Mobil*/
+@media only screen and (max-width: 799px) and (orientation: portrait)
+
+	{
+	
+		body {
+			background-repeat: no-repeat;
+			background-position: center 0;
+			background-size: 1500px;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+
+		#introduccio {
+			margin: 25% auto;
+			background: rgba(255, 255, 255, 0.6);
+			width: 100%
+			height: 100%;
+			font-size: 1.5em;
+			text-align: center;
+			padding-bottom: 0.45em;
+			padding-top: 0.5em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+		}
+
+		#contenedor {
+			background-image: url(../imatges/portada3.jpg);
+			margin: 0 auto;
+			width: 100%;
+			height: 93%;
+			position: relative;
+			top: 40em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+		}
+
+		#apartats {
+			width: 100%;
+			height: 4em;
+			margin: 0 auto;
+			padding: 0;
+			background: rgba(255, 255, 255, 0.5);
+			position: relative;
+			top: -4em;
+			z-index: 1;
+		}
+
+		#titulo {
+			font-size: 3em;
+		}
+
+		#flecha {
+			transition: transform 2s;
+			color: black;
+			width: 1em;
+			margin: 0 auto;
+		}
+
+		#flecha:hover {
+			transform: translate(0, 0.5em);
+		}
+
+		div p a:link {
+            color: black;
+        }
+
+        div p a:visited {
+            color: black;
+        }
+
+        div p a:hover {
+            color: red;
+        }
+
+        div p a:active {
+            color: black;
+        }
+
+		.actual {
+			background-color: white;
+			opacity: 1;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		#main {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			position: absolute;
+			top: -0.001em;
+			background-image: url(imatges/portada3.jpg);
+		}
+
+	}
+
+@media only screen and (max-width: 799px) and (orientation: landscape)
+
+	{
+	body {
+			background-repeat: no-repeat;
+			background-position: center 0;
+			background-size: 1200px;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+
+
+		#contenedor {
+			background-image: url(../imatges/portada3.jpg);
+			margin: 0 auto;
+			width: 80%;
+			height: 93%;
+			position: relative;
+			top: 20em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+		}
+
+		#apartats {
+			width: 100%;
+			height: 4em;
+			margin: 0 auto;
+			padding: 0;
+			background: rgba(255, 255, 255, 0.5);
+			position: relative;
+			top: -4em;
+			z-index: 1;
+		}
+
+		#introduccio {
+			margin: 0 auto;
+			background: rgba(255, 255, 255, 0.6);
+			width: 100%
+			height: 100%;
+			font-size: 1.5em;
+			text-align: center;
+			padding-bottom: 0.45em;
+			padding-top: 0.5em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+		}
+
+		#titulo {
+			font-size: 3em;
+		}
+
+		#flecha {
+			transition: transform 2s;
+			color: black;
+			width: 1em;
+			margin: 0 auto;
+		}
+
+		#flecha:hover {
+			transform: translate(0, 0.5em);
+		}
+
+		div p a:link {
+            color: black;
+        }
+
+        div p a:visited {
+            color: black;
+        }
+
+        div p a:hover {
+            color: red;
+        }
+
+        div p a:active {
+            color: black;
+        }
+
+		.actual {
+			background-color: white;
+			opacity: 1;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		#main {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			position: absolute;
+			top: -0.001em;
+			background-image: url(imatges/portada3.jpg);
+		}		
+}
+
+
+/*PC*/
+@media only screen and (min-width: 800px)
+	{
+		body {
+			background-repeat: no-repeat;
+			background-position: center 0;
+			background-size: 2000px;
+			background-attachment: fixed;
+			overflow: hidden;
+		}
+
+		#contenedor {
+			background-image: url(../imatges/portada3.jpg);
+			margin: 0 auto;
+			width: 80%;
+			height: 93%;
+			position: relative;
+			top: 20em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+		}
+
+		#apartats {
+			width: 100%;
+			height: 4em;
+			margin: 0 auto;
+			padding: 0;
+			background: rgba(255, 255, 255, 0.5);
+			position: relative;
+			top: -4em;
+			z-index: 1;
+		}
+
+		#introduccio {
+			margin: 25% auto;
+			background: rgba(255, 255, 255, 0.6);
+			width: 100%
+			height: 100%;
+			font-size: 2.5em;
+			text-align: center;
+			padding-bottom: 0.45em;
+			padding-top: 0.5em;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+		}
+
+		#titulo {
+			font-size: 3em;
+		}
+
+		#flecha {
+			transition: transform 2s;
+			color: black;
+			width: 1em;
+			margin: 0 auto;
+		}
+
+		#flecha:hover {
+			transform: translate(0, 0.5em);
+		}
+
+		div p a:link {
+            color: black;
+        }
+
+        div p a:visited {
+            color: black;
+        }
+
+        div p a:hover {
+            color: red;
+        }
+
+        div p a:active {
+            color: black;
+        }
+
+		.actual {
+			background-color: white;
+			opacity: 1;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		#main {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			position: absolute;
+			top: -0.001em;
+			background-image: url(imatges/portada3.jpg);
+		}
+
+}
