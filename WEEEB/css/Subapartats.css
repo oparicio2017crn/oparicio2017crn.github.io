@@ -1,0 +1,438 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------*/
+
+body{
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        
+}
+
+/*Mobil*/
+@media only screen and (max-width: 799px) and (orientation: portrait)
+
+    {
+        .apart {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            height: 4.45em;
+            width: 25%;
+            border: none;
+            cursor: pointer;
+            color: black;
+            display: inline-block;
+            float: left;
+            font-size: 0.9em;
+        }
+        .apart:hover {
+            background-color: white;
+        }
+
+        a {
+            height: 1.5em;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+        button:hover {
+            color: red;
+        }
+        .informacio, .coneix, .llocs, .muay {
+            display: none;
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 0.9em;
+            position: absolute;
+            top: 3.35em;
+        }
+
+        a {
+            height: auto;
+        }
+        .informacio a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .coneix a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .llocs a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .muay a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+
+
+
+        /* Informació */
+
+        .subcontingut .informacio {
+
+        }
+
+        .subcontingut:hover .informacio {
+            display: block;
+        }
+
+        .subcontingut .informacio a {
+            display: block;
+            position: relative;
+            z-index: 500;
+        }
+
+        /* Coneix */
+        .coneix {
+            left: 25%;
+        }
+        .coneix a {
+            display: block;
+        }
+        .subcontingut:hover .coneix {
+            display: block;
+        }
+
+        /* Llocs */
+        .llocs {
+            left: 50%;
+        }
+        .llocs a {
+            display: block;
+        }
+        .subcontingut:hover .llocs {
+            display: block;
+        }
+
+        /* Muay Thai */
+        .muay {
+            left: 75%;
+        }
+        .muay a {
+            display: block;
+        }
+        .subcontingut:hover .muay {
+            display: block;
+        }
+
+        a:link {
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: white;
+        }
+
+    }
+
+@media only screen and (max-width: 799px) and (orientation: landscape)
+
+    {
+    .apart {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            height: 2.65em;
+            width: 25%;
+            border: none;
+            cursor: pointer;
+            color: black;
+            display: inline-block;
+            float: left;
+            font-size: 1.5em;
+        }
+        .apart:hover {
+            background-color: white;
+        }
+
+        a {
+            height: 1.5em;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+        button:hover {
+            color: red;
+        }
+        .informacio, .coneix, .llocs, .muay {
+            display: none;
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.1em;
+            position: absolute;
+            top: 3.65em;
+        }
+
+        a {
+            height: auto;
+        }
+        .informacio a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .coneix a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .llocs a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .muay a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+
+
+
+        /* Informació */
+
+        .subcontingut .informacio {
+
+        }
+
+        .subcontingut:hover .informacio {
+            display: block;
+        }
+
+        .subcontingut .informacio a {
+            display: block;
+            position: relative;
+            z-index: 500;
+        }
+
+        /* Coneix */
+        .coneix {
+            left: 25%;
+        }
+        .coneix a {
+            display: block;
+        }
+        .subcontingut:hover .coneix {
+            display: block;
+        }
+
+        /* Llocs */
+        .llocs {
+            left: 50%;
+        }
+        .llocs a {
+            display: block;
+        }
+        .subcontingut:hover .llocs {
+            display: block;
+        }
+
+        /* Muay Thai */
+        .muay {
+            left: 75%;
+        }
+        .muay a {
+            display: block;
+        }
+        .subcontingut:hover .muay {
+            display: block;
+        }
+
+        a:link {
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: white;
+        }
+}
+
+
+/*PC*/
+@media only screen and (min-width: 800px)
+    {
+        .apart {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            height: 2.65em;
+            width: 25%;
+            border: none;
+            cursor: pointer;
+            color: black;
+            display: inline-block;
+            float: left;
+            font-size: 1.5em;
+        }
+        .apart:hover {
+            background-color: white;
+        }
+
+        a {
+            height: 1.5em;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        a:hover {
+            background-color: white;
+        }
+
+        button:hover {
+            color: red;
+        }
+        .informacio, .coneix, .llocs, .muay {
+            display: none;
+            width: 25%;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.5em;
+            position: absolute;
+            top: 2.68em;
+        }
+
+        a {
+            height: auto;
+        }
+        .informacio a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .coneix a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .llocs a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        .muay a {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+
+
+
+        /* Informació */
+
+        .subcontingut .informacio {
+
+        }
+
+        .subcontingut:hover .informacio {
+            display: block;
+        }
+
+        .subcontingut .informacio a {
+            display: block;
+            position: relative;
+            z-index: 500;
+        }
+
+        /* Coneix */
+        .coneix {
+            left: 25%;
+        }
+        .coneix a {
+            display: block;
+        }
+        .subcontingut:hover .coneix {
+            display: block;
+        }
+
+        /* Llocs */
+        .llocs {
+            left: 50%;
+        }
+        .llocs a {
+            display: block;
+        }
+        .subcontingut:hover .llocs {
+            display: block;
+        }
+
+        /* Muay Thai */
+        .muay {
+            left: 75%;
+        }
+        .muay a {
+            display: block;
+        }
+        .subcontingut:hover .muay {
+            display: block;
+        }
+
+        a:link {
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: white;
+        }
+}
