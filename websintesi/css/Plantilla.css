@@ -348,7 +348,7 @@ body{
 			overflow: auto;
 			position: absolute;
 			top: 1em;
-			background-image: url(imatges/portada3.jpg);
+			background-color: white;
 		}
 		#main p {
 			width: 95%;
